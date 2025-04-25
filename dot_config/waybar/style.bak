@@ -1,0 +1,152 @@
+@import "styleCfg.css";
+
+* {
+    border: none;
+    font-family: "Ubuntu NF";
+}
+
+window#waybar {
+    background-color: @base01;
+    border-bottom: 1px solid #181825;
+    border-radius: 50px;
+    transition-property: background-color;
+    color: @base02;
+}
+
+window#waybar.hidden {
+    opacity: 0.5;
+}
+
+#workspaces,
+#cpu,
+#cpu.critical,
+#memory,
+#memory.critical,
+#disk,
+#disk.critical,
+#clock,
+#backlight,
+#battery,
+#network,
+#tray,
+#pulseaudio,
+#custom-cava,
+#custom-updates,
+#custom-notification,
+#temperature.critical
+{
+        background-color: @base03;
+        padding: 0 10px;
+        color: @base04;
+        /*border-color: #11111B;*/
+        margin: 4px 2px 4px 2px;
+        border: 1px solid;
+/*        border: 2px solid rgba(0, 0, 0, 0);*/
+        border-radius: 90px;
+        background-clip: padding-box;
+}
+
+/* Groups: left */
+#cpu,
+#cpu.critical,
+#network,
+#custom-cava,
+#tray
+{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-right: 0px;
+    padding-right: 1px;
+    border-right: 0px;
+}
+
+/* Groups: center */
+#memory,
+#backlight,
+#temperature.critical,
+#memory.critical
+{
+    border-radius: 0px;
+    margin: 4px 0px 4px 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+}
+
+/* Groups: right*/
+#disk,
+#battery,
+#battery.critical:not(.charging),
+#pulseaudio,
+#disk.critical,
+#custom-notification
+{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-left: 0px;
+    padding-left: 1px;
+    border-left: 0px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    min-width: 20px;
+    color: @base04;
+
+}
+
+#workspaces button:hover {
+    /*background: rgba(255, 255, 255, 0.2);*/
+    background: rgba(40, 44, 52, 0.2);
+}
+
+#workspaces button.focused {
+    border-top: 1px solid @base04;
+    border-bottom: 1px solid @base04;
+    background: rgba(40, 44, 52, 0.2);
+/*    background: rgba(255, 255, 255, 0.2);*/
+}
+
+
+#workspaces button.urgent {
+  color: #F80000;
+}
+
+#battery.charging, #battery.plugged {
+}
+
+@keyframes blink {
+    to {
+        background-color: #1e222a;
+        color: #e06c75;
+    }
+}
+
+#battery.critical:not(.charging),
+#cpu.critical,
+#temperature.critical,
+#memory.critical,
+#disk.critical
+{
+    background-color: #F38BA8;
+    color: #1e222a;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#network.disconnected {
+    background-color: #F38BA8;
+    color: #1e222a;
+}
+
+#language {
+    font-size: 18px;
+/*    padding-right: 10px;*/
+}
+
+#custom-notification {
+    font-family: "NotoSansMono Nerd Font";
+}

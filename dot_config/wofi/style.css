@@ -1,0 +1,31 @@
+#window {
+	font-size: 18px;
+	font-family: Monospace;
+	color: #7a7a7a;
+	background: rgba(2, 19, 24, 0.8); /*#474b31; /*linear-gradient(135deg, white, lightgreen, darkblue);*/
+	border-radius: 7px;
+}
+
+#entry {
+	margin: 7px;
+}
+
+#entry:selected {
+	color: #021318;
+	/*background: linear-gradient(-90deg, #9432cc, #3bb4d9);*/
+	background: linear-gradient(-90deg, rgba(148, 50, 204, 0.8), rgba(51, 187, 187, 0.8));
+	border-radius: 7px;
+}
+
+image {
+	margin: .20em;
+}
+
+#input {
+	font-size: 25px;
+	color: #7a7a7a;
+	background-color: #021318;
+	border-radius: 7px;
+	margin: 7px;
+	padding: 5px;
+}
