@@ -45,10 +45,10 @@ nord15 #b48ead - (180,142,173)
 /* The whole bar */
 #waybar {
     color: #eceff4;
-    background-color: rgba(46,52,64,0.6);
+    background-color: rgba(46,52,64,0);
     border-radius: 5px;
     font-family:JetBrainsMonoNerdFont;
-    font-size: 13px;
+    font-size: 10px;
    }
 
 *:hover {
@@ -95,9 +95,9 @@ tooltip label {
 #custom-log-off,
 #custom-suspend,
 #custom-lock {
-    background: rgba(129,161,193,0.4);
+    background: rgba(129,161,193,0);
     border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    box-shadow: 0 0 10px rgba(0,0,0,0);
     padding:.1rem 1rem;
     margin: 1px 1px;
 }
@@ -128,7 +128,7 @@ tooltip label {
 #custom-suspend:hover,
 #custom-lock:hover {
     background: rgba(129,161,193,0.8);
-    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    box-shadow: 0 0 10px rgba(0,0,0,0);
 }
 
 #custom-launcher,
