@@ -49,6 +49,7 @@ nord15 #b48ead - (180,142,173)
     border-radius: 5px;
     font-family:JetBrainsMonoNerdFont;
     font-size: 10px;
+    min-height: 0;
    }
 
 *:hover {
@@ -148,6 +149,7 @@ tooltip label {
 }
 
 #workspaces button {
+    color: #00e6e6;
     border-radius: 5px;
     padding: 0px 6px;
     margin-right: 2px;

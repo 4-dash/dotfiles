@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top", // Waybar position (top|bottom|left|right)
-    //"height": 30, // Uncomment to set a custom height
+    //"height": 20, // Uncomment to set a custom height
     //"output": "DP-1", // Uncomment to specify a display
     //"width": 1850, // Uncomment to set a custom width
 
@@ -9,8 +9,8 @@
 
     "modules-left": [
         "custom/launcher",
-        "sway/workspaces",
-        "sway/window"
+        "hyprland/workspaces",
+        "hyprland/window"
     ],
 
     "custom/launcher": {
@@ -19,7 +19,7 @@
         "tooltip": false
     },
 
-    "sway/workspaces": {
+    "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "format": "{icon}",
@@ -35,7 +35,7 @@
         }
     },
 
-    "sway/window": {
+    "hyprland/window": {
         "format": "{}",
         //"all-outputs": true, // Active window shows only on active display when commented
         "max-length": 120,
