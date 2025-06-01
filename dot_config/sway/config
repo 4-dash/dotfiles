@@ -259,7 +259,7 @@ input "type:touchpad" {
 # set wallpaper for all monitors
 #swaybg --image home/arli/Pictures/Wallpapers/wallhaven-34xkv0_1920x1080.png --mode fill
 
-output * bg /home/arli/Pictures/Wallpapers/wallhaven-34xkv0_1920x1080.png fill
+output * bg /home/arli/.config/wallpapers/wallhaven-34xkv0_1920x1080.png fill
 
 # remove border (title bar at the top)
 default_border pixel
