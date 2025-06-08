@@ -21,7 +21,7 @@ set $menu wofi dmenu #rofi -show combi
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+# output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # Example configuration:
 #
@@ -217,7 +217,7 @@ bindsym $mod+r mode "resize"
     # Special key to take a screenshot with grim
     ## capture the specified area
     bindsym Print exec grim -g "$(slurp)" - | wl-copy
-    
+    bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
     ## capture the focused monitor
     bindsym $mod+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy
     
@@ -259,7 +259,7 @@ input "type:touchpad" {
 # set wallpaper for all monitors
 #swaybg --image home/arli/Pictures/Wallpapers/wallhaven-34xkv0_1920x1080.png --mode fill
 
-output * bg /home/arli/.config/wallpapers/wallhaven-34xkv0_1920x1080.png fill
+output * bg $HOME/.config/wallpapers/wallhaven-34xkv0_1920x1080.png fill
 
 # remove border (title bar at the top)
 default_border pixel
@@ -270,3 +270,6 @@ client.focused          #b35900 #b35900 #b35900 #b35900   #b35900
 
 # gaps
 gaps inner 3
+
+output HDMI-A-1 pos 0 0
+output eDP1 pos 1920 0
