@@ -1,0 +1,13 @@
+#!/bin/bash
+
+DIRECTORIES=(hypr kitty waybar wofi i3 scripts rofi sway swaync wallpapers)
+
+
+
+for x in "${DIRECTORIES[@]}"
+do
+	echo "Syncing ${x}"
+	cp -r ~/.config/$x ~/Desktop/dotfiles/dot_config/
+done
+
+echo "Synced .config to Desktop/dotfiles/dot_config"
