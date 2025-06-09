@@ -273,3 +273,9 @@ gaps inner 3
 
 output HDMI-A-1 pos 0 0
 output eDP1 pos 1920 0
+
+# lock 
+bindsym $mod+Ctrl+G exec swaylock
+# poweroff and reboot
+bindsym $mod+Ctrl+Delete exec systemctl poweroff
+bindsym $mod+Ctrl+Escape exec systemctl reboot

@@ -1,0 +1,9 @@
+# The defaults below could be overridden in $XDG_CONFIG_HOME/swaylock/config
+#  (~/.config/swaylock/config).
+#
+# Image path supports environment variables and shell expansions,
+# e.g. image=$HOME/Pictures/default.png
+
+#image=$HOME/.config/wallpapers/wallhaven-34xkv0_1920x1080.png
+#scaling=fill
+color=000000
