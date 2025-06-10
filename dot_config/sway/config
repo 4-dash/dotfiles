@@ -256,6 +256,9 @@ input "type:touchpad" {
   natural_scroll enabled
 }
 
+input * {
+  xkb_options caps:escape
+}
 # set wallpaper for all monitors
 #swaybg --image home/arli/Pictures/Wallpapers/wallhaven-34xkv0_1920x1080.png --mode fill
 
