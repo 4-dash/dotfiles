@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIRECTORIES=(hypr kitty waybar wofi i3 scripts rofi sway swaylock swaync  wallpapers)
+DIRECTORIES=(hypr kitty waybar wofi i3 scripts rofi sway swaylock swaync  wallpapers nvim)
 
 
 
