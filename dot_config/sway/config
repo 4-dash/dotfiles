@@ -256,13 +256,15 @@ input "type:touchpad" {
   natural_scroll enabled
 }
 
-input * {
-  xkb_options caps:escape
+input "type:keyboard" {
+  xkb_layout us,de,az
+  xkb_variant ,nodeadkeys
+  xkb_options caps:swapescape,grp:shift_caps_toggle
 }
 # set wallpaper for all monitors
-#swaybg --image home/arli/Pictures/Wallpapers/wallhaven-34xkv0_1920x1080.png --mode fill
+#swaybg --image $HOME/Pictures/Wallpapers/wallhaven-34xkv0_1920x1080.png --mode fill
 
-output * bg $HOME/.config/wallpapers/wallhaven-34xkv0_1920x1080.png fill
+output * bg $HOME/.config/wallpapers/wallhaven-dp37wo_1920x1080.png fill
 
 # remove border (title bar at the top)
 default_border pixel

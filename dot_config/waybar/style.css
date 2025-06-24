@@ -55,7 +55,7 @@ button {
 }
 
 #workspaces button {
-    padding: 0 5px;
+    padding: 0 7px;
     background-color: #b35900;
     color: #000000;
     margin: 3px 5px;
@@ -99,6 +99,7 @@ button {
     padding: 0 10px;
     color: #000000;
     margin: 3px 5px;
+    background-color: #f09320;
 }
 
 #window,
@@ -283,8 +284,10 @@ label:focus {
 #language {
     color: #000000;
     min-width: 16px;
+    padding: 0 10px;
+    margin: 3px 5px;
     border-radius: 5px;
-    padding: 5px;
+    background-color: #f09320;
 }
 
 #keyboard-state {
@@ -312,12 +315,11 @@ label:focus {
 }
 
 #privacy {
-    padding: 0;
+    padding: 0 7px;
 }
 
 #privacy-item {
-    padding: 0 5px;
-    color: white;
+    padding: 0 7px;
 }
 
 #privacy-item.screenshare {
@@ -330,4 +332,12 @@ label:focus {
 
 #privacy-item.audio-out {
     background-color: #0069d4;
+}
+
+#cava {
+    color: #8FBC8F;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 0 7px;
+    font-family: "bargraph";
 }

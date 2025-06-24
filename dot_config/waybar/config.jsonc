@@ -18,7 +18,7 @@
     ],
     "modules-right": [
         "mpd",
-        "idle_inhibitor",
+        //"idle_inhibitor",
         "pulseaudio",
         "network",
         "power-profiles-daemon",
@@ -42,10 +42,13 @@
          "format": "{name}: {icon}",
          "format-icons": {
              "1": "",
-             "2": "",
+	     "2": "",
+             //"2": "",
              "3": "",
-             "4": "",
-             "5": "",
+	     "4": "",
+	     "5": "",
+            // "4": "",
+            // "5": "",
              "urgent": "",
              "focused": "",
              "default": ""
@@ -216,7 +219,8 @@
 		}
     },
     "cava": {
-        //        "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
+       // "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
+	"exec" : "cava",
         "framerate": 30,
         "autosens": 1,
         "sensitivity": 100,
