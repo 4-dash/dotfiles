@@ -216,13 +216,13 @@ bindsym $mod+r mode "resize"
 
     # Special key to take a screenshot with grim
     ## capture the specified area
-    bindsym Print exec grim -g "$(slurp)" - | wl-copy
-    bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
+    bindsym Print exec grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/shot-$(date +%Y%m%d-%H%M%S).png | wl-copy
+    bindsym $mod+Shift+s exec grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/shot-$(date +%Y%m%d-%H%M%S).png | wl-copy
     ## capture the focused monitor
-    bindsym $mod+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy
+    bindsym $mod+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | tee ~/Pictures/Screenshots/shot-$(date +%Y%m%d-%H%M%S).png | wl-copy
     
     ## capture all screens
-    bindsym $mod+Shift+Print exec grim - | wl-copy
+    bindsym $mod+Shift+Print exec grim - | tee ~/Pictures/Screenshots/shot-$(date +%Y%m%d-%H%M%S).png | wl-copy
 
 #
 # Status Bar:
