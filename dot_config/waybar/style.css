@@ -9,7 +9,7 @@ window#waybar {
     font-family: FontAwsome, monospace;
     background-color: transparent;
    /* border-bottom: 3px solid rgba(100, 114, 125, 1);*/
-    color: #ebdbb2;
+    color: #9900ff;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -55,9 +55,9 @@ button {
 }
 
 #workspaces button {
-    padding: 0 7px;
+    padding: 0 8px;
     background-color: #000000;
-    color: #ffffff;
+    color: #bf00ff;
     margin: 3px 5px;
 }
 
@@ -96,7 +96,6 @@ button {
 #power-profiles-daemon,
 #mpd {
     padding: 0 10px;
-    color: #ffffff;
     margin: 3px 5px;
     background-color: #000000; /*#f09320;*/
 }
@@ -118,18 +117,19 @@ button {
 
 #clock {
     background-color: #000000;
+    color: #33ccff;
 }
 
 /*
 #battery {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color: #9900ff;
 }
 */
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
+    color: #000000;
+    background-color: #9900ff; /*#26A65B;*/
 }
 
 @keyframes blink {
@@ -142,7 +142,7 @@ button {
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
     background-color: #f53c3c;
-    color: #ffffff;
+    color: #99ffcc;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -175,12 +175,13 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: #000000;
+    color: #2ecc71;
 }
 
 #memory {
     background-color: #9b59b6;
+    color: #2ecc71;
 }
 
 #disk {
