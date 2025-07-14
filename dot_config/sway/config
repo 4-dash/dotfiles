@@ -272,10 +272,11 @@ output * bg $HOME/.config/wallpapers/wallhaven-dp37wo_1920x1080.png fill
 
 # remove border (title bar at the top)
 default_border pixel
+default_floating_border pixel
 
 # border color change
 # class                 border  backgr. text    indicator child_border
-client.focused          #b35900 #b35900 #b35900 #b35900   #b35900
+client.focused          #44a7b4 #44a7b4 #44a7b4 #44a7b4   #44a7b4
 
 # gaps
 gaps inner 3
