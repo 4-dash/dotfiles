@@ -47,22 +47,20 @@ button {
 /*button:hover {
     background: inherit;
     box-shadow: inset 0 -3px #ffffff;
-}*/
+}
+*/
 
 /* you can set a style on hover for any module like this */
-#pulseaudio:hover {
+/*#pulseaudio:hover {
     background-color: #a37800;
 }
+*/
 
 #workspaces button {
     padding: 0 8px;
     background-color: #000000;
-    color: #bf00ff;
+    color: #C724B1;
     margin: 3px 5px;
-}
-
-#workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
 }
 
 #workspaces button.focused {
@@ -70,6 +68,7 @@ button {
 }
 
 #workspaces button.urgent {
+    color: #000000;
     background-color: #eb4d4b;
 }
 
@@ -102,7 +101,7 @@ button {
 
 #window,
 #workspaces {
-    margin: 0px 4px;
+    margin: 0 0px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -117,32 +116,31 @@ button {
 
 #clock {
     background-color: #000000;
-    color: #33ccff;
+    color: #00B5E2;
 }
 
-/*
+
 #battery {
     background-color: #000000;
-    color: #9900ff;
+    color: #44D62C;
 }
-*/
 
 #battery.charging, #battery.plugged {
-    color: #000000;
-    background-color: #9900ff; /*#26A65B;*/
+    color: #44D62C;
+    background-color: #000000;
 }
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: #000000;
+        background-color: #000000;
+        color: #f53c3c;
     }
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
     background-color: #f53c3c;
-    color: #99ffcc;
+    color: #ffffff;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -154,7 +152,7 @@ button {
     padding-right: 15px;
     color: #000000
 }
-/*
+
 #power-profiles-daemon.performance {
     background-color: #000000;
     color: #ffffff;
@@ -176,16 +174,16 @@ label:focus {
 
 #cpu {
     background-color: #000000;
-    color: #2ecc71;
+    color: #ED8B00;
 }
 
 #memory {
-    background-color: #9b59b6;
-    color: #2ecc71;
+    background-color: #000000;
+    color: #ED8B00;
 }
 
 #disk {
-    background-color: #964B00;
+    background-color: #000000;
 }
 
 #backlight {
@@ -193,57 +191,47 @@ label:focus {
 }
 
 #network {
-    background-color: #2980b9;
+    background-color: #000000;
+    color: #00B5E2;
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
+    background-color: #000000;
+    color: #00B5E2;
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    background-color: #000000;
+    color: #00B5E2;
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #458588;
+    background-color: #000000;
+    color: #00B5E2;
 }
 
 #wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
+    background-color: #000000;
+    color: #00B5E2;
 }
 
 #wireplumber.muted {
-    background-color: #458588;
-}
-*/
-
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
+    background-color: #000000;
 }
 
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-}
-/*
 #temperature {
-    background-color: #f0932b;
+    background-color: #000000;
+    color: #ED8B00;
 }
-*/
+
+
 #temperature.critical {
-    background-color: #eb4d4b;
+    background-color: #f53c3c;
+    color: #000000;
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: #000000;
 }
 
 #tray > .passive {
@@ -282,7 +270,7 @@ label:focus {
 }
 
 #language {
-    color: #ffffff;
+    color: #FB48C4;
     min-width: 16px;
     padding: 0 10px;
     margin: 3px 5px;
@@ -340,4 +328,33 @@ label:focus {
     border-right: 0px;
     padding: 0 7px;
     font-family: "bargraph";
+}
+
+#custom-media {
+    background-color: #000000;
+    color: #26D07C;
+    padding: 0 3px;
+    margin: 3 5px;
+    min-width: 80px;
+}
+
+#custom-media.custom-spotify {
+    background-color: #66cc99;
+}
+
+#custom-media.custom-vlc {
+    background-color: #ffa000;
+}
+
+#custom-media.playing,
+#custom-media.paused,
+#custom-media.stopped,
+#custom-media.inactive {
+  color: #26D07C;
+}
+
+#custom-media.playing-muted,
+#custom-media.paused-muted,
+#custom-media.stopped-muted {
+  color: #aaaaaa;
 }
