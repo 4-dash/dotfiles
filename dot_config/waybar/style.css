@@ -150,22 +150,22 @@ button {
 
 #power-profiles-daemon {
     padding-right: 15px;
-    color: #000000
+    color: #00B5E2;
 }
 
 #power-profiles-daemon.performance {
     background-color: #000000;
-    color: #ffffff;
+    color: #00B5E2;
 }
 
 #power-profiles-daemon.balanced {
     background-color: #000000;
-    color: #ffffff;
+    color: #00B5E2;
 }
 
 #power-profiles-daemon.power-saver {
     background-color: #000000;
-    color: #000000;
+    color: #00B5E2;
 }
 
 label:focus {
