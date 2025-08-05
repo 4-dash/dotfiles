@@ -1,8 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: JetBrainsMono Nerd Font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
-    border-radius: 5px;
 }
 
 window#waybar {
@@ -60,7 +59,6 @@ button {
     padding: 0 8px;
     background-color: #000000;
     color: #C724B1;
-    margin: 3px 5px;
 }
 
 #workspaces button.focused {
@@ -93,15 +91,25 @@ button {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
-#mpd {
+#mpd,
+#custom-media,
+#language {
     padding: 0 10px;
-    margin: 3px 5px;
+    margin: 1 3px;
     background-color: #000000; /*#f09320;*/
+    border-radius: 5px;
 }
 
-#window,
 #workspaces {
-    margin: 0 0px;
+   background-color: #000000;
+   margin: 1 3px;
+   border-radius: 5px;
+   padding: 0 10px;
+   margin-left: 100px;
+}
+
+#window {
+    background-color: #000000;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -116,7 +124,7 @@ button {
 
 #clock {
     background-color: #000000;
-    color: #00B5E2;
+    color: #ffffff;
 }
 
 
@@ -272,10 +280,6 @@ label:focus {
 #language {
     color: #FB48C4;
     min-width: 16px;
-    padding: 0 10px;
-    margin: 3px 5px;
-    border-radius: 5px;
-    background-color: #000000;
 }
 
 #keyboard-state {
@@ -331,10 +335,7 @@ label:focus {
 }
 
 #custom-media {
-    background-color: #000000;
     color: #26D07C;
-    padding: 0 3px;
-    margin: 3 5px;
     min-width: 80px;
 }
 
