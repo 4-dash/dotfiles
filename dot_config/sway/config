@@ -262,7 +262,7 @@ input "type:touchpad" {
 input "type:keyboard" {
   xkb_layout us,de,az
   xkb_variant ,nodeadkeys
-  xkb_options caps:swapescape,grp:shift_caps_toggle
+  xkb_options caps:swapescape,grp:win_space_toggle
 }
 # set wallpaper for all monitors
 #swaybg --image $HOME/Pictures/Wallpapers/wallhaven-34xkv0_1920x1080.png --mode fill
