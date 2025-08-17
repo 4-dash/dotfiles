@@ -273,8 +273,8 @@ output * bg $HOME/.config/wallpapers/wallhaven-dp37wo_1920x1080.png fill
 default_border pixel
 default_floating_border pixel
 
-# RRGGBBAA
-set $color #C724B1B3
+# RRGGBBAA   B3
+set $color #AC9FCC
 
 # border color change
 # class                 border  backgr. text    indicator child_border
