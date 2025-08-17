@@ -1,7 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: JetBrainsMono Nerd Font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 window#waybar {
@@ -56,7 +56,7 @@ button {
 */
 
 #workspaces button {
-    padding: 0 8px;
+    padding: 0 5px;
     background-color: #000000;
     color: #C724B1;
 }
@@ -114,12 +114,12 @@ button {
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 2;
+    margin-left: 3;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
-    margin-right: 2;
+    margin-right: 3;
 }
 
 #clock {
