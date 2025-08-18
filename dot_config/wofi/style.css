@@ -4,6 +4,7 @@
 	color: #7a7a7a;
 	background: rgba(2, 19, 24, 0.8); /*#474b31; /*linear-gradient(135deg, white, lightgreen, darkblue);*/
 	border-radius: 7px;
+	border: 2px solid #AC9FCC;
 }
 
 #entry {
